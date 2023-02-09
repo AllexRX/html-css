@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+            box-shadow: 2px 1.5px 4px 1px rgba(0, 0, 0, 0.534);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+            margin-left: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgb(165, 165, 165);
+        }
+
+        footer {
+            background-color: rgb(0, 0, 32);
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p { 
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <section>
+            <article>
+                <h2>Titulo do Artigo</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, saepe aspernatur quis eaque eum eos atque sint odit, dolores animi nulla asperiores. Veniam delectus voluptates doloremque inventore, iusto laborum iste.</p>
+            </article>
+            <article>
+                <h2>Titulo do segundo Artigo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sequi commodi velit soluta nihil iste cupiditate ad a, dolor molestias omnis nam eos sint quisquam placeat, rerum explicabo! Tenetur, laudantium.</p>
+                <aside>
+                    <p>Conteudo periférico(do lado do Artigo)</p>
+                </aside>
+            </article>
+        </section>
+        <aside>
+            Conteudoo periferico do site
+        </aside>
+    </main>
+    <hr>
+    <footer>
+        <p>Desenvolvido por Alex</p>
+    </footer>
+
+</body>
+</html>

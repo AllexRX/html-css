@@ -48,6 +48,9 @@ section {
    padding-left: 30px;
    font-size: 3.5vw;
 }
+section > p {
+   padding-bottom: 3em;
+}
 section.normal {
    background-color: white;
    color: black;
@@ -55,6 +58,7 @@ section.normal {
 section.imagem {
    background-color: rgb(31, 30, 30);
    color: white;
+   box-shadow: inset 2px 4px 15px 0px rgba(0, 0, 0, 0.493);
 }
 section.imagem > p {
    display: inline-block;

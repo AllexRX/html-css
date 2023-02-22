@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tabelas grandes</title>
+   <style>
+      body {
+         font-family: 'Times New Roman', Times, serif
+      }
+      table {
+         border-collapse: collapse;
+         width: 600px;
+         height: 400px;
+         position: relative;
+      }
+      caption {
+         color: white;
+         background-color: rgb(21, 87, 104);
+         width: 400px;
+         height: 30px;
+         margin: auto;
+         border-top-right-radius: 5px;
+         border-top-left-radius: 5px;
+      }
+      thead > tr > th {
+         position: sticky;
+         top: -1px;
+         background-color: rgb(24, 99, 117);
+      }
+      tbody > tr:nth-child(even) {
+         background-color: lightgray;
+      }
+      tr {
+         padding: 25px;
+      }
+      td, th {
+         border: 1px solid #000000;
+      }
+      thead, tfoot {
+         background-color: rgb(24, 99, 117);
+         color: white;
+         height: 30px;
+      }
+      td#numerdo_de_habitantes {
+         text-align: center;
+      }
+      td.porcentagem {
+         text-align: center;
+      }
+   </style>
+</head>
+<body>
+   <h1>Uso de tabelas grandes</h1>
+   <!--
+      anatomia de tabelas grandes:
+      <table>
+         <caption> </caption>
+         <thead>
+            aqui podemos ter TR, TH, TD
+         </thead>
+
+         <tbody>
+            aqui podemos ter TR, TH, TD
+         </tbody>
+
+         <tfoot>
+            aqui podemos ter TR, TH, TD
+         </tfoot>
+      </table>
+   -->
+   
+   <table>
+      <caption>Os 10 estados com maiores populações</caption>
+      <thead>
+         <tr>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
+            <th scope="col">Porcentagem da População</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>São Paulo</td>
+            <td>41 262 199</td>
+            <td class="porcentagem">22,2%</td>
+         </tr>
+         <tr>
+            <td>Minas Gerais</td>
+            <td>19 597 330</td>
+            <td class="porcentagem">10,0%</td>
+         </tr>
+         <tr>
+            <td>Rio de Janeiro</td>
+            <td>15 989 929</td>
+            <td class="porcentagem">8,0%</td>
+         </tr>
+         <tr>
+            <td>Bahia</td>
+            <td>14 016 906</td>
+            <td class="porcentagem">7,1%</td>
+         </tr>
+         <tr>
+            <td>Paraná</td>
+            <td>10 444 526</td>
+            <td class="porcentagem">5,7%</td>
+         </tr>
+         <tr>
+            <td>Rio Grande do Sul</td>
+            <td>10 693 929</td>
+            <td class="porcentagem">5,3%</td>
+         </tr>
+         <tr>
+            <td>Pernambuco</td>
+            <td>8 796 448</td>
+            <td class="porcentagem">4,4%</td>
+         </tr>
+         <tr>
+            <td>Ceará</td>
+            <td>8 452 381</td>
+            <td class="porcentagem">4,3%</td>
+         </tr>
+         <tr>
+            <td>Pará</td>
+            <td>7 581 051</td>
+            <td class="porcentagem">4,1%</td>
+         </tr>
+         <tr>
+            <td>Santa Catarina</td>
+            <td>6 248 436</td>
+            <td class="porcentagem">3,7%</td>
+         </tr>
+      </tbody>
+      <tfoot>
+         <tr>
+            <th scope="row">Total de Habitantes</th>
+            <td colspan="2" id="numerdo_de_habitantes">143,083,135</td>
+         </tr>
+      </tfoot>
+   </table>
+   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis voluptatum, necessitatibus incidunt ipsa in, asperiores praesentium reiciendis assumenda explicabo blanditiis ab vitae deserunt architecto quidem inventore, numquam velit nesciunt facere! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo magnam adipisci, quod porro earum sint veniam, id incidunt hic, facilis labore voluptas voluptatum impedit eveniet at architecto enim laudantium culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam corporis placeat cum dolorum minima quod inventore deleniti, possimus ut tempora eveniet commodi veniam, perferendis officiis eos tempore nulla! Obcaecati, alias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quisquam voluptatibus doloremque eligendi voluptatum officia incidunt aliquam voluptas sequi, veritatis eius officiis, non perferendis in cupiditate impedit alias assumenda ea. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, laudantium beatae vel non culpa commodi dignissimos eligendi eum blanditiis perspiciatis velit eaque perferendis est architecto officia optio ratione impedit enim? Lorem</p>
+   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis voluptatum, necessitatibus incidunt ipsa in, asperiores praesentium reiciendis assumenda explicabo blanditiis ab vitae deserunt architecto quidem inventore, numquam velit nesciunt facere! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo magnam adipisci, quod porro earum sint veniam, id incidunt hic, facilis labore voluptas voluptatum impedit eveniet at architecto enim laudantium culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam corporis placeat cum dolorum minima quod inventore deleniti, possimus ut tempora eveniet commodi veniam, perferendis officiis eos tempore nulla! Obcaecati, alias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quisquam voluptatibus doloremque eligendi voluptatum officia incidunt aliquam voluptas sequi, veritatis eius officiis, non perferendis in cupiditate impedit alias assumenda ea. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, laudantium beatae vel non culpa commodi dignissimos eligendi eum blanditiis perspiciatis velit eaque perferendis est architecto officia optio ratione impedit enim? Lorem</p>
+   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis voluptatum, necessitatibus incidunt ipsa in, asperiores praesentium reiciendis assumenda explicabo blanditiis ab vitae deserunt architecto quidem inventore, numquam velit nesciunt facere! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo magnam adipisci, quod porro earum sint veniam, id incidunt hic, facilis labore voluptas voluptatum impedit eveniet at architecto enim laudantium culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam corporis placeat cum dolorum minima quod inventore deleniti, possimus ut tempora eveniet commodi veniam, perferendis officiis eos tempore nulla! Obcaecati, alias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quisquam voluptatibus doloremque eligendi voluptatum officia incidunt aliquam voluptas sequi, veritatis eius officiis, non perferendis in cupiditate impedit alias assumenda ea. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, laudantium beatae vel non culpa commodi dignissimos eligendi eum blanditiis perspiciatis velit eaque perferendis est architecto officia optio ratione impedit enim? Lorem</p>
+   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis voluptatum, necessitatibus incidunt ipsa in, asperiores praesentium reiciendis assumenda explicabo blanditiis ab vitae deserunt architecto quidem inventore, numquam velit nesciunt facere! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo magnam adipisci, quod porro earum sint veniam, id incidunt hic, facilis labore voluptas voluptatum impedit eveniet at architecto enim laudantium culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam corporis placeat cum dolorum minima quod inventore deleniti, possimus ut tempora eveniet commodi veniam, perferendis officiis eos tempore nulla! Obcaecati, alias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quisquam voluptatibus doloremque eligendi voluptatum officia incidunt aliquam voluptas sequi, veritatis eius officiis, non perferendis in cupiditate impedit alias assumenda ea. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, laudantium beatae vel non culpa commodi dignissimos eligendi eum blanditiis perspiciatis velit eaque perferendis est architecto officia optio ratione impedit enim? Lorem</p>
+   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis voluptatum, necessitatibus incidunt ipsa in, asperiores praesentium reiciendis assumenda explicabo blanditiis ab vitae deserunt architecto quidem inventore, numquam velit nesciunt facere! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo magnam adipisci, quod porro earum sint veniam, id incidunt hic, facilis labore voluptas voluptatum impedit eveniet at architecto enim laudantium culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam corporis placeat cum dolorum minima quod inventore deleniti, possimus ut tempora eveniet commodi veniam, perferendis officiis eos tempore nulla! Obcaecati, alias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quisquam voluptatibus doloremque eligendi voluptatum officia incidunt aliquam voluptas sequi, veritatis eius officiis, non perferendis in cupiditate impedit alias assumenda ea. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, laudantium beatae vel non culpa commodi dignissimos eligendi eum blanditiis perspiciatis velit eaque perferendis est architecto officia optio ratione impedit enim? Lorem</p>
+   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis voluptatum, necessitatibus incidunt ipsa in, asperiores praesentium reiciendis assumenda explicabo blanditiis ab vitae deserunt architecto quidem inventore, numquam velit nesciunt facere! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo magnam adipisci, quod porro earum sint veniam, id incidunt hic, facilis labore voluptas voluptatum impedit eveniet at architecto enim laudantium culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam corporis placeat cum dolorum minima quod inventore deleniti, possimus ut tempora eveniet commodi veniam, perferendis officiis eos tempore nulla! Obcaecati, alias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quisquam voluptatibus doloremque eligendi voluptatum officia incidunt aliquam voluptas sequi, veritatis eius officiis, non perferendis in cupiditate impedit alias assumenda ea. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, laudantium beatae vel non culpa commodi dignissimos eligendi eum blanditiis perspiciatis velit eaque perferendis est architecto officia optio ratione impedit enim? Lorem</p>
+   
+</body>
+</html>
